@@ -1267,10 +1267,10 @@ body[dir="rtl"] .footer-title::after {
 .modal-container {
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
-    padding: 32px;
+    padding: 24px;
     border-radius: var(--border-radius-md);
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     position: relative;
     box-shadow: var(--shadow-lg);
     transform: translateY(-50px);
@@ -1281,10 +1281,19 @@ body[dir="rtl"] .footer-title::after {
     transform: translateY(0);
 }
 
+.modal-container .form-group {
+    margin-bottom: 14px;
+    gap: 6px;
+}
+
+.modal-container .form-control {
+    padding: 10px 14px;
+}
+
 .modal-close {
     position: absolute;
-    top: 24px;
-    inset-inline-end: 24px;
+    top: 20px;
+    inset-inline-end: 20px;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-muted);
@@ -1347,5 +1356,20 @@ body[dir="rtl"] .footer-title::after {
 
     .mobile-toggle {
         display: flex;
+    }
+
+    .modal-container {
+        padding: 16px 20px;
+    }
+    .modal-container .form-group {
+        margin-bottom: 10px;
+    }
+    .modal-container .form-control {
+        padding: 8px 12px;
+    }
+    .modal-close {
+        top: 14px;
+        inset-inline-end: 14px;
+        font-size: 1.3rem;
     }
 }
