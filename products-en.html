@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectors & Products Directory | Oya B2B</title>
+    <meta name="description"
+        content="Browse premium products manufactured in Egypt, ready for international shipment and managed by Oya B2B Verified Suppliers.">
+
+    <!-- Styles, Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body dir="ltr">
+
+    <!-- Fixed Header -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="index-en.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">Oya B2B</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index-en.html" class="nav-link">Home</a>
+                <a href="products-en.html" class="nav-link active">Sectors & Products</a>
+                <a href="about-en.html" class="nav-link">About Us</a>
+                <a href="contact-en.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="products.html" class="lang-toggle">AR</a>
+                <button class="mobile-toggle" id="mobileMenuOpen"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Panel -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+        <div class="mobile-nav-header">
+            <a href="index-en.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">Oya B2B</span>
+            </a>
+            <button class="close-btn" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="index-en.html" class="mobile-link">Home</a></li>
+            <li><a href="products-en.html" class="mobile-link active">Sectors & Products</a></li>
+            <li><a href="about-en.html" class="mobile-link">About Us</a></li>
+            <li><a href="contact-en.html" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Export Catalog</span>
+                <h1 class="section-title">Verified Supplier Product Directory</h1>
+                <p class="section-desc">Search by keywords or filter by specific industrial sectors.</p>
+            </div>
+
+            <!-- Custom Search and Category Filters -->
+            <div class="search-filter-wrapper">
+                <div class="search-box-custom">
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: var(--text-muted);"></i></span>
+                    <input type="text" id="productSearchInput" placeholder="Search by name, spec or keyword...">
+                </div>
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="food">Food Industries</button>
+                    <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+                    <button class="filter-btn" data-filter="textiles">Textiles & Garments</button>
+                    <button class="filter-btn" data-filter="furniture">Furniture</button>
+                    <button class="filter-btn" data-filter="packaging">Packaging</button>
+                    <button class="filter-btn" data-filter="chemicals">Chemicals</button>
+                    <button class="filter-btn" data-filter="cleaning">Detergents</button>
+                    <button class="filter-btn" data-filter="kitchen">Houseware</button>
+                    <button class="filter-btn" data-filter="leather">Leather & Shoes</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card-asymmetric" data-category="agriculture">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80"
+                            alt="Frozen Artichokes" class="product-image">
+                        <span class="product-tag">Agriculture</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Frozen Artichoke Hearts</h3>
+                        <p class="product-card-desc">Freshly harvested artichokes, IQF frozen, graded and packaged for
+                            European export markets with global compliance certificates.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card-asymmetric" data-category="textiles">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80"
+                            alt="Premium Cotton Wear" class="product-image">
+                        <span class="product-tag">Textiles</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Giza Long-Staple Cotton Shirts</h3>
+                        <p class="product-card-desc">Premium quality garments fabricated using world-famous Egyptian
+                            long-staple cotton fibers, highly durable and comfortable.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card-asymmetric" data-category="furniture">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80"
+                            alt="Premium Contract Furniture" class="product-image">
+                        <span class="product-tag">Furniture</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Contract Hotel & Office Furniture</h3>
+                        <p class="product-card-desc">Premium wood finishes and metal works crafted for hotels, admin
+                            complexes, and custom layout installations.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card-asymmetric" data-category="food">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80"
+                            alt="Egyptian Confectioneries" class="product-image">
+                        <span class="product-tag">Food Industries</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Confectionery & Chocolates</h3>
+                        <p class="product-card-desc">Food products made under strict health certificates suitable for
+                            Gulf states and EU importers.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card-asymmetric" data-category="packaging">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+                            alt="Corrugated Packaging Boxes" class="product-image">
+                        <span class="product-tag">Packaging</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Corrugated Cardboard Boxes</h3>
+                        <p class="product-card-desc">Heavy-duty industrial and agricultural packaging solutions designed
+                            to withstand transit humidity and rough handle.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card-asymmetric" data-category="cleaning">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80"
+                            alt="Industrial Cleaners" class="product-image">
+                        <span class="product-tag">Detergents</span>
+                    </div>
+                    <div class="product-details-body">
+                        <h3 class="product-card-title">Industrial Sanitizers & Detergents</h3>
+                        <p class="product-card-desc">High concentration formulations compliant with international
+                            environmental criteria for facilities and hotels.</p>
+                        <div class="product-card-footer">
+                            <span style="font-weight:700;">Verified Supplier</span>
+                            <a href="product-details-en.html" class="btn-card">Details ➔</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index-en.html" class="footer-logo">
+                    <div class="footer-logo-icon">O</div>
+                    <span class="footer-logo-text">Oya B2B</span>
+                </a>
+                <p class="footer-desc">A smart Egyptian platform connecting local factories and suppliers to global
+                    export markets professionally and efficiently.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="mailto:info@oyab2b.com" class="social-icon" aria-label="Gmail"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index-en.html" class="footer-link">Home</a></li>
+                    <li><a href="products-en.html" class="footer-link">Sectors & Products</a></li>
+                    <li><a href="about-en.html" class="footer-link">About Us</a></li>
+                    <li><a href="contact-en.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Export Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Technical Evaluation</a></li>
+                    <li><a href="#" class="footer-link">B2B Profile Design</a></li>
+                    <li><a href="#" class="footer-link">Secure Escrow Contracts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Us</h4>
+                <p class="footer-desc"><i class="fa-solid fa-location-dot"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Admin Building 1, Ramo Compound,
+                    District 1, 6th of October City, Giza, Egypt.</p>
+                <p class="footer-desc"><i class="fa-solid fa-envelope"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Email: info@oyab2b.com</p>
+                <p class="footer-desc"><i class="fa-solid fa-phone"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Phone: +20 100 000 0000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Oya B2B Export Development. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

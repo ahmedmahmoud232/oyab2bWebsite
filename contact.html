@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | أويا B2B لتطوير الصادرات</title>
+    <meta name="description"
+        content="تواصل مع فريق الدعم والتشغيل لمنصة أويا لتسجيل مصنعك أو إرسال استفساراتك حول منظومة التصدير.">
+
+    <!-- Styles, Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body dir="rtl">
+
+    <!-- Fixed Header -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">أويا B2B</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="products.html" class="nav-link">المنتجات والقطاعات</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link active">اتصل بنا</a>
+            </nav>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact-en.html" class="lang-toggle">EN</a>
+                <button class="mobile-toggle" id="mobileMenuOpen"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Panel -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">أويا B2B</span>
+            </a>
+            <button class="close-btn" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="index.html" class="mobile-link">الرئيسية</a></li>
+            <li><a href="products.html" class="mobile-link">المنتجات والقطاعات</a></li>
+            <li><a href="about.html" class="mobile-link">من نحن</a></li>
+            <li><a href="contact.html" class="mobile-link active">اتصل بنا</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Content Layout -->
+    <div class="container">
+        <div class="contact-layout">
+            <!-- Form Card -->
+            <div class="contact-form-card">
+                <h2 style="margin-bottom:8px; font-weight:800;">تواصل مباشرة مع مستشاري التصدير</h2>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:32px;">قم بملء النموذج وسيقوم أحد
+                    ممثلي قسم التشغيل والدعم بالرد عليك خلال 24 ساعة عمل.</p>
+
+                <div id="formFeedback" class="alert-feedback"></div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">الاسم بالكامل</label>
+                        <input type="text" id="contactName" class="form-control" placeholder="اسمك الكريم" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">البريد الإلكتروني</label>
+                        <input type="email" id="contactEmail" class="form-control" placeholder="example@company.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">رقم الهاتف (مع رمز الدولة)</label>
+                        <input type="tel" id="contactPhone" class="form-control" placeholder="+20 100 000 0000"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">تفاصيل رسالتك أو استفسارك</label>
+                        <textarea id="contactMessage" class="form-control" rows="5"
+                            placeholder="اكتب استفسارك بالتفصيل هنا..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">إرسال الرسالة</button>
+                </form>
+            </div>
+
+            <!-- Side Info -->
+            <div class="contact-info-column">
+                <div class="info-item">
+                    <div class="info-icon-wrapper"><i class="fa-solid fa-location-dot"
+                            style="color: var(--primary-light-blue);"></i></div>
+                    <div class="info-content-wrapper">
+                        <span class="info-item-title">مقر الشركة</span>
+                        <span class="info-item-desc">المبنى الإداري 1، كمبوند رامو، الحي المتميز، مدينة 6 أكتوبر،
+                            الجيزة، مصر.</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon-wrapper"><i class="fa-solid fa-envelope"
+                            style="color: var(--primary-light-blue);"></i></div>
+                    <div class="info-content-wrapper">
+                        <span class="info-item-title">البريد الإلكتروني للعمل</span>
+                        <span class="info-item-desc">info@oyab2b.com</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon-wrapper"><i class="fa-solid fa-globe"
+                            style="color: var(--primary-light-blue);"></i></div>
+                    <div class="info-content-wrapper">
+                        <span class="info-item-title">الموقع الرسمي</span>
+                        <span class="info-item-desc"><a href="https://oyab2b.com"
+                                target="_blank">www.oyab2b.com</a></span>
+                    </div>
+                </div>
+
+                <!-- Embedded Location Map -->
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.5186835261474!2d30.9329712!3d29.9932789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145856eb2cc4c98f%3A0xc3191d9d78cd01b5!2zNnRoIG9mIE9jdG9iZXIsIEdpemEgR292ZXJub3JhdGU!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">
+                    <div class="footer-logo-icon">O</div>
+                    <span class="footer-logo-text">أويا B2B</span>
+                </a>
+                <p class="footer-desc">
+                    منصة مصرية ذكية لربط المصانع والموردين المصريين بأسواق التصدير العالمية بطريقة احترافية ومنظمة.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="mailto:info@oyab2b.com" class="social-icon" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">الرئيسية</a></li>
+                    <li><a href="products.html" class="footer-link">المنتجات والقطاعات</a></li>
+                    <li><a href="about.html" class="footer-link">من نحن</a></li>
+                    <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">الخدمات التصديرية</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">تقييم الجاهزية الفنية</a></li>
+                    <li><a href="#" class="footer-link">بناء بروفايل B2B</a></li>
+                    <li><a href="#" class="footer-link">إدارة العقود وتوثيقها</a></li>
+                    <li><a href="#" class="footer-link">الفحص والرقابة على الشحن</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">تواصل معنا</h4>
+                <p class="footer-desc"><i class="fa-solid fa-location-dot"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>المبنى الإداري 1، كمبوند رامو،
+                    الحي المتميز، مدينة 6 أكتوبر، الجيزة، مصر.</p>
+                <p class="footer-desc"><i class="fa-solid fa-envelope"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>البريد: info@oyab2b.com</p>
+                <p class="footer-desc"><i class="fa-solid fa-phone"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>الهاتف: +20 100 000 0000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 أويا لتطوير الصادرات B2B. جميع الحقوق محفوظة.</p>
+            <div style="display:flex; gap:16px;">
+                <a href="privacy.html" class="footer-link" style="font-size:0.85rem;">سياسة الخصوصية</a>
+                <a href="terms.html" class="footer-link" style="font-size:0.85rem;">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

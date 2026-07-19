@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Oya B2B</title>
+    <meta name="description" content="View product specifications and certificates, and request a direct quotation (RFQ) from our verified Egyptian exporter factory.">
+    
+    <!-- Styles, Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body dir="ltr">
+
+    <!-- Fixed Header -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="index-en.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">Oya B2B</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index-en.html" class="nav-link">Home</a>
+                <a href="products-en.html" class="nav-link active">Sectors & Products</a>
+                <a href="about-en.html" class="nav-link">About Us</a>
+                <a href="contact-en.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="product-details.html" class="lang-toggle">AR</a>
+                <button class="mobile-toggle" id="mobileMenuOpen"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Panel -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+        <div class="mobile-nav-header">
+            <a href="index-en.html" class="logo-wrapper">
+                <div class="logo-icon">O</div>
+                <span class="logo-text">Oya B2B</span>
+            </a>
+            <button class="close-btn" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="index-en.html" class="mobile-link">Home</a></li>
+            <li><a href="products-en.html" class="mobile-link active">Sectors & Products</a></li>
+            <li><a href="about-en.html" class="mobile-link">About Us</a></li>
+            <li><a href="contact-en.html" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Product Detail Layout -->
+    <div class="container">
+        <div class="detail-grid">
+            <!-- Left Side: Gallery -->
+            <div class="product-gallery">
+                <div class="main-image-wrapper">
+                    <img id="mainProductImgEn" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Frozen Artichoke Hearts">
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="thumb-wrapper active" onclick="document.getElementById('mainProductImgEn').src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=200&q=80" alt="Artichoke photo 1">
+                    </div>
+                    <div class="thumb-wrapper" onclick="document.getElementById('mainProductImgEn').src='https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&w=800&q=80'">
+                        <img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&w=200&q=80" alt="Artichoke photo 2">
+                    </div>
+                    <div class="thumb-wrapper" onclick="document.getElementById('mainProductImgEn').src='https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80'">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=200&q=80" alt="Artichoke photo 3">
+                    </div>
+                    <div class="thumb-wrapper" onclick="document.getElementById('mainProductImgEn').src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=200&q=80" alt="Artichoke photo 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Info -->
+            <div class="product-info-column">
+                <div class="info-header">
+                    <span class="info-category">Agriculture Crops</span>
+                    <h1 class="info-title">Frozen Artichoke Hearts (IQF)</h1>
+                    <p style="font-weight:700; color:var(--primary-light-blue);">Product Code: EG-ART-09</p>
+                </div>
+                
+                <p class="info-desc">
+                    Premium grade Egyptian artichoke hearts harvested from Delta farms and instantly processed using Individual Quick Freezing (IQF) to preserve taste and nutritional value. Perfectly tailored for EU supermarket chains and food processors.
+                </p>
+
+                <!-- Technical Specs Box -->
+                <div class="specs-box">
+                    <h3 class="specs-title">Technical Specs & Packing</h3>
+                    <ul class="specs-list">
+                        <li class="spec-item"><strong>Packaging:</strong> 10kg Carton / 400g Bags</li>
+                        <li class="spec-item"><strong>Certificates:</strong> ISO 22000, Global GAP</li>
+                        <li class="spec-item"><strong>Capacity:</strong> 150 Tons/Month</li>
+                        <li class="spec-item"><strong>MOQ:</strong> 40ft Reefer Container (RF)</li>
+                        <li class="spec-item"><strong>Terms:</strong> FOB Alexandria / CIF</li>
+                        <li class="spec-item"><strong>Origin:</strong> Arab Republic of Egypt</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 12px;">
+                    <button class="btn btn-primary open-rfq-modal" style="width: 100%;">Request Direct Quote (RFQ)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RFQ Modal Popup -->
+    <div class="modal-overlay" id="rfqModalOverlay">
+        <div class="modal-container">
+            <span class="modal-close" id="rfqModalClose"><i class="fa-solid fa-xmark"></i></span>
+            <h2 style="margin-bottom: 8px; font-weight:800;">Request Quotation</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:24px;">Please fill out this form. The factory will draft and send a verified proposal through Oya platform.</p>
+            
+            <div id="rfqFeedback" class="alert-feedback"></div>
+            
+            <form id="rfqForm">
+                <div class="form-group">
+                    <label for="rfqName">Full Name / Company Name</label>
+                    <input type="text" id="rfqName" class="form-control" placeholder="e.g. Gulf Import Corp" required>
+                </div>
+                <div class="form-group">
+                    <label for="rfqEmail">Business Email</label>
+                    <input type="email" id="rfqEmail" class="form-control" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="rfqQty">Order Quantity (Tons or Containers)</label>
+                    <input type="number" id="rfqQty" class="form-control" placeholder="1" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="rfqNotes">Specifications & Shipping Terms</label>
+                    <textarea id="rfqNotes" class="form-control" rows="3" placeholder="State any customized quality grade, packaging specs or terms here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:12px;">Submit RFQ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index-en.html" class="footer-logo">
+                    <div class="footer-logo-icon">O</div>
+                    <span class="footer-logo-text">Oya B2B</span>
+                </a>
+                <p class="footer-desc">
+                    A smart Egyptian platform connecting local factories and suppliers to global export markets
+                    professionally and efficiently.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="mailto:info@oyab2b.com" class="social-icon" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index-en.html" class="footer-link">Home</a></li>
+                    <li><a href="products-en.html" class="footer-link">Sectors & Products</a></li>
+                    <li><a href="about-en.html" class="footer-link">About Us</a></li>
+                    <li><a href="contact-en.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Export Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Technical Evaluation</a></li>
+                    <li><a href="#" class="footer-link">B2B Profile Design</a></li>
+                    <li><a href="#" class="footer-link">Secure Escrow Contracts</a></li>
+                    <li><a href="#" class="footer-link">Inspection & Logistics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Us</h4>
+                <p class="footer-desc"><i class="fa-solid fa-location-dot"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Admin Building 1, Ramo Compound,
+                    District 1, 6th of October City, Giza, Egypt.</p>
+                <p class="footer-desc"><i class="fa-solid fa-envelope"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Email: info@oyab2b.com</p>
+                <p class="footer-desc"><i class="fa-solid fa-phone"
+                        style="margin-inline-end: 8px; color: var(--accent-gold);"></i>Phone: +20 100 000 0000</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Oya B2B Export Development. All rights reserved.</p>
+            <div style="display:flex; gap:16px;">
+                <a href="privacy-en.html" class="footer-link" style="font-size:0.85rem;">Privacy Policy</a>
+                <a href="terms-en.html" class="footer-link" style="font-size:0.85rem;">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
